@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiple Choice Quiz </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./Assets/css/style.css" />
+  </head>
+<body>
+    <section class="quiz-container">
+         <!-- start page with start button--> 
+        <section id="start">
+            <h2>Coding Quiz Challenge</h2>
+            <button id="startbtn">Start Quiz</button>
+        </section>
+        <!-- quiz page that will display question and buttons with answer options-->
+        <section id="quiz"> 
+            <div id="timer"></div>
+            <section id="quiz-question"><p></p></section>
+                <button id="a" onclick="checkAnswer('a')"></button>
+                <button id="b" onclick="checkAnswer('b')"></button>
+                <button id="c" onclick="checkAnswer('c')"></button>
+                <button id="d" onclick="checkAnswer('d')"></button>
+            <div id="correct"></div>
+        </section>
+        <!--page that displays when quiz is over or time runs out-->
+        <section id="gameover">
+            <h2> All done! </h2>
+            <div id="results"></div>
+            <label for = "initials"> Player Initials </label>
+            <input type="text" size="60" placeholder="Enter your initials to submit your score." name="initials" id="initials"/>
+            <button id="submit"> Submit Score </button>
+        </section>
+        <!--page that displays with a list of saved highscores and option to clear scores and/or play again-->
+    <section id="score-container">
+        <section id="highscore">
+            <h2>Highscores</h2>
+            <div id="score-initials"></div>
+            <button id="clear-scores"> Clear Highscores</button>
+            <button id="replay"> Take Quiz Again!</button>
+        </section>
+    </section>
+</section>
+<script src="./Assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+:root{
+    background-color:white;
+}
+* {
+    font-family:Arial, Helvetica, sans-serif;
+}
+.quiz-container {
+    display:flex;
+    width:100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+}
+/* styles start page*/
+#start {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+/* styles all h2 elements in html*/
+h2 {
+    color: hotpink;
+    font-size:200%;
+    margin: 7px;
+}
+/* styles all buttons in html*/
+button {
+    background-color: hotpink;
+    border-width: 4px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 2px;
+    border-color: lightpink;
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    font-weight: bolder;
+}
+/*positions timer*/
+#timer {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+/* initially hides quiz, end of quiz, and highscore sections*/
+#highscore, #gameover, #quiz {
+    display:none;
+}
+li{
+    list-style-type: none;
+}
+/* styles items on end of quiz page*/
+#gameover {
+    justify-content:center;
+    align-items: center;
+}
+/*styles input and label for score and initial submission*/
+ input {
+    margin: 10px;
+ }
+
+ label { font-size: 16px;
+    font-weight: bolder;
+    text-decoration: underline;}
+/*styles list of scores*/
+#score-initials {
+    font-size: larger;
+    font-weight: bold;
+    background-color: lightpink;
+    margin: 1px;
+    width:100%;
+    text-align: center;
+}
